@@ -75,7 +75,8 @@ defmodule Ueberauth.Strategy.Github do
     uid_field: :id,
     default_scope: "",
     send_redirect_uri: true,
-    oauth2_module: Ueberauth.Strategy.Github.OAuth
+    oauth2_module: Ueberauth.Strategy.Github.OAuth,
+    ignores_csrf_attack: true
 
   alias Ueberauth.Auth.Info
   alias Ueberauth.Auth.Credentials
